@@ -1,10 +1,14 @@
-﻿#define _CRT_SECURE_NO_DEPRECATE
-using namespace std;
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <locale>
 #include <stdlib.h>
 #include <cstdlib>
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::ostream;
+
 #include "List.h"
 #include "Node.h"
 #include "Menu.h"
@@ -17,6 +21,7 @@ int main()
 	while (next_step != 10) {
 		next_step = menu();
 		switch (next_step) {
+	
 		case 1:
 			system("CLS");
 			list.List::pushFront(list.List::enterNum());
@@ -61,6 +66,7 @@ int main()
 			break;
 		case 9:
 			system("CLS");
+			list.List::showFrontIter(list);
 			break;
 		}
 	}

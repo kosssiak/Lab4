@@ -1,10 +1,14 @@
-#define _CRT_SECURE_NO_DEPRECATE
-using namespace std;
 #include <iostream>
 #include <string>
 #include <locale>
 #include <stdlib.h>
 #include <cstdlib>
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::ostream;
+
 #include "List.h"
 #include "Node.h"
 #include "Menu.h"
@@ -22,7 +26,6 @@ int menu() {
 	cout << "8) Поиск элемента в списке по индексу" << endl;
 	cout << "9) Вывести первый и последний элементы списка" << endl;
 	cout << "10) Завершение работы программы" << endl;
-
 
 	cin >> num_oper;
 	if (num_oper <= 0 || num_oper > 10) {
